@@ -24,10 +24,14 @@
 
 [oo-Modal~="type:input"] {
   max-height: 200px;
+
+  .oo-Modal-content {
+    margin-top: 0;
+  }
 }
 
 [oo-Modal~="type:alert"] {
-  max-height: 300px;
+  max-height: 153px;
 }
 
 .oo-Modal-content {
@@ -35,7 +39,7 @@
   height: 100%;
   margin: 1rem;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 450px) {
     margin: .2rem;
   }
 }
