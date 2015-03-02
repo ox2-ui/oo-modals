@@ -1,0 +1,5 @@
+template(name="ooModal")
+  div(oo-Modal="{{oo}}" id="{{id}}")
+    .oo-Modal-content(oo-Color="{{ooColor}}")
+      +Template.dynamic template=modalTemplate
+  .ooModal--Backdrop.no-drag.no-wheel
