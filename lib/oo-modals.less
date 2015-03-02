@@ -3,7 +3,6 @@
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
     width: 100%;
     max-width: 40rem;
     height: 100%;
@@ -21,6 +20,14 @@
   &.is-closed {
     animation-name: anim-close;
   }
+}
+
+[oo-Modal~="type:input"] {
+  max-height: 200px;
+}
+
+[oo-Modal~="type:alert"] {
+  max-height: 300px;
 }
 
 .oo-Modal-content {
