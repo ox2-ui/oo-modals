@@ -1,5 +1,10 @@
 template(name="ooModal")
-  div(oo-Modal="{{oo}}" id="{{id}}")
-    .oo-Modal-content(oo-Color="{{ooColor}}")
+  if innerContent
+    div(oo-Modal="{{oo}}" id="{{id}}")
+      .oo-Modal-content(oo-Color="{{ooColor}}")
+        +Template.dynamic template=modalTemplate
+  else
+    div(oo-Modal="{{oo}}" id="{{id}}" oo-Color="{{ooColor}}")
       +Template.dynamic template=modalTemplate
-  .ooModal--Backdrop.no-drag.no-wheel
+  if backdrop
+    .ooModal--Backdrop.no-drag.no-wheel
