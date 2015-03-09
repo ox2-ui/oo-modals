@@ -1,8 +1,8 @@
 template(name="ooModal")
   if XXXscrollable
-    div(id="{{id}}")
+    .XXmodal(id="{{id}}")
       if backdrop
-        .no-drag.no-wheel(oo-Modal-Content-Backdrop="{{ooBackdrop}}")
+        .no-drag.no-wheel.oo-Modal-Content-Backdrop(oo-Modal-Content-Backdrop="{{ooBackdrop}}")
       +ooNativeScroller oo=ooScroller
         div(oo-Modal-Content="{{oo}}" oo-Color="{{ooColor}}")
           +Template.dynamic template=modalTemplate

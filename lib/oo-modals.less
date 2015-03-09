@@ -176,6 +176,23 @@
 }
 
 [oo-Modal-Content] {
+
+  & .is-closed {
+    animation-name: anim-zoom-in-close;
+  }
+}
+
+.XXmodal.is-closed > [oo-Modal-Content-Backdrop] {
+  animation-name: anim-fadeOut;
+  animation-duration: 0.5s;
+}
+
+.XXmodal.is-closed [oo-Modal-Content] {
+  animation-name: anim-slide-from-top-close;
+  animation-duration: 0.5s;
+}
+
+[oo-Modal-Content] {
   width: 100%;
   max-width: 500px;
   margin: 30px 10px;
@@ -211,7 +228,17 @@
   100% { opacity: 1; transform: scale3d(1, 1, 1); }
 }
 
+@keyframes anim-zoom-in-close {
+  0% { opacity: 1; }
+  100% { opacity: 0; transform: scale3d(0.5, 0.5, 1); }
+}
+
 @keyframes anim-slide-from-top-open {
   0% { transform: translate3d(0, -100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes anim-slide-from-top-close {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, -100%, 0); }
 }
