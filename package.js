@@ -13,6 +13,8 @@ Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
   api.export('ooModalOpen');
   api.export('ooModalClose');
+  api.export('ooModalScrollOpen');
+  api.export('ooModalScrollClose');
   // Core
   api.use([
     'templating'
