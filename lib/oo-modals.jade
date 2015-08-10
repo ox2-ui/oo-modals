@@ -4,7 +4,7 @@ template(name="ooModal")
       .oo-Modal-content(oo-Color="{{ooColor}}")
         +Template.dynamic template=modalTemplate
     if backdrop
-      .ooModal--Backdrop.no-drag.no-whee
+      .ooModal--Backdrop.no-drag.no-wheel
   else
     div(oo-Modal="{{oo}}" id="{{id}}" oo-Color="{{ooColor}}")
       +Template.dynamic template=modalTemplate
