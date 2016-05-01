@@ -16,5 +16,5 @@ template(name="ooModalScroll")
     if backdrop
       .no-drag.no-wheel.oo-Modal-Content-Backdrop(oo-Modal-Content-Backdrop="{{ooBackdrop}}")
     +ooNativeScroller oo=ooScroller
-      div(oo-Modal-Content="{{oo}}" oo-Color="{{ooColor}}")
+      div(oo-Modal-Content="{{oo}}" oo-Color="{{ooColor}}" style="max-width: {{maxWidth}}")
         +Template.dynamic template=modalTemplate
