@@ -22,6 +22,8 @@
   }
 }
 
+
+
 [oo-Modal~="type:input"] {
   max-height: 200px;
 
@@ -68,6 +70,14 @@
   max-width: none;
   max-height: none;
 
+}
+
+[oo-Modal~="top:20"] {
+  top: 20px;
+}
+
+[oo-Modal~="left:50p"] {
+  left: 50%;
 }
 
 
@@ -207,6 +217,10 @@
   animation-fill-mode: forwards;
   animation-name: anim-zoom-in-open;
 
+}
+
+[oo-Modal-Content~="no-fill-mode"] {
+  animation-fill-mode: none;
 }
 
 [oo-Modal-Content~="spacing"] {
