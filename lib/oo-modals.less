@@ -124,6 +124,14 @@
   z-index: 390;
 }
 
+[oo-Modal~="level:8"] {
+  z-index: 800;
+}
+
+[oo-Modal~="level:8"] + .ooModal--Backdrop {
+  z-index: 790;
+}
+
 // FadeIn
 @keyframes anim-fadeIn {
   0%   { opacity: 0; }
